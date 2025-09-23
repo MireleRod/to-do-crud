@@ -23,7 +23,6 @@ public class TodoController {
     public void atualizarStatus(
             @PathVariable("id") Integer id, @RequestBody TodoEntity todo){
             todo.setId(id);
-
             todoService.atualizarStatus(todo);
     }
 
